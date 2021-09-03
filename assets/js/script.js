@@ -5,7 +5,7 @@
 //var start would equal document.get element by id
 //and an event listner to that button
 var start = document.getElementById("startBtn")
-start.addEventListner("click"), (function(){
+start.addEventListener("click", function(){
     console.log("start")
     startTimer();
 })
@@ -29,10 +29,10 @@ function startTimer() {
 //access th eobject question and choices
 [ 
 
-    question: "",
-    choice1:  "",
-    choice2:  "",
-    answer: ""
+    // question: "",
+    // choice1:  "",
+    // choice2:  "",
+    // answer: ""
 
 
 
