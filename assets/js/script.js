@@ -5,7 +5,7 @@
 //var start would equal document.get element by id
 //and an event listner to that button
 var start = document.getElementById("startBtn")
-start.addEventListener("click", function(){
+start.addEventListener("click", function () {
     console.log("start")
     startTimer();
 })
@@ -21,23 +21,49 @@ function startTimer() {
         }
         timeLeft--
         console.log(timeLeft)
-    }, 1000);    
+    }, 1000);
 }
-//present a question
-//which question / index are we on?
+
 //access that array using the index we are currently on
-//access th eobject question and choices
-[ 
-
+//access the object question and choices
+var questions = [
     // question: "",
-    // choice1:  "",
-    // choice2:  "",
-    // answer: ""
-
-
-
-
+    {
+        question: 'HTML is',
+        answer1: "aaaaa",
+        answer2: "qqqqq",
+        answer3: "ooooo"
+    },
+    {
+        question: 'DOM means',
+        answer1: "eeeeee",
+        answer2: "pppppp",
+        answer3: "tttttt"
+    }
 ]
+// We start the game with a score of 0.
+var score = 0;
+
+/*
+// Loop over every question object
+for (var i = 0; i < questions.length; i++) {
+    // Display current question to user and ask OK/Cancel
+    var answer = confirm(questions[i].q);
+  
+    // Compare answers
+    if (
+      (answer === true && questions[i].a === 't') ||
+      (answer === false && questions[i].a === 'f')
+    ) {
+      // Increase score
+      score++;
+      // Alert the user
+      alert('Correct!');
+    } else {
+      alert('Wrong!');
+    }
+  }
+*/
 //and set the coresponding HTML elements inner text to the objects values
 
 //When I answer a question 
@@ -63,7 +89,7 @@ function startTimer() {
 //WHEN the game is over
 //Then I can save my initial and score
 
-////////
+////////User story///////
 //WHEN I click the start button 
 //THEN a timer starts and I am presented with a question
 //WHEN I answer a question
@@ -74,4 +100,4 @@ function startTimer() {
 //THEN the game is over
 //WHEN the game is over 
 //THEN I can save my initials and score
-/////////
+////////////////////////
