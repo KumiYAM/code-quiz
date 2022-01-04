@@ -17,7 +17,6 @@
 
 ## Technplogy used
    Client side storege
-   Github to publish
 
 ## Installation
    Due to on going process of building the application, installation is not avalable to public now.<br/>
@@ -25,7 +24,7 @@
 ## Usage
 User Story:<br/>
 AS A coding boot camp student<br/>
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores<br/>
 SO THAT I can gauge my progress compared to my peers
 
 ## License
